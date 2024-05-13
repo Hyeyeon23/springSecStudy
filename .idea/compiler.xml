@@ -10,9 +10,6 @@
         <module name="corespringsecurity" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="corespringsecurity" target="1.8" />
-    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
