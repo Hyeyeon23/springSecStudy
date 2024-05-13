@@ -5,8 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="17d9c83f-f494-4cf5-8b34-cfca582ac3e6" name="변경" comment="인증성공 핸들러까지 완료">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/corespringsecurity/src/main/java/io/security/corespringsecurity/controller/login/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/corespringsecurity/src/main/java/io/security/corespringsecurity/controller/login/LoginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/corespringsecurity/src/main/java/io/security/corespringsecurity/security/configs/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/corespringsecurity/src/main/java/io/security/corespringsecurity/security/configs/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/corespringsecurity/src/main/java/io/security/corespringsecurity/security/provider/CustomAuthenticationProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/corespringsecurity/src/main/java/io/security/corespringsecurity/security/provider/CustomAuthenticationProvider.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/corespringsecurity/target/classes/io/security/corespringsecurity/controller/login/LoginController.class" beforeDir="false" afterPath="$PROJECT_DIR$/corespringsecurity/target/classes/io/security/corespringsecurity/controller/login/LoginController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/corespringsecurity/target/classes/io/security/corespringsecurity/security/configs/SecurityConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/corespringsecurity/target/classes/io/security/corespringsecurity/security/configs/SecurityConfig.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,8 +21,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
-        <option value="HTML File" />
         <option value="Class" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -119,7 +123,15 @@
       <option name="project" value="LOCAL" />
       <updated>1715562139865</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="인증성공 핸들러까지 완료">
+      <option name="closed" value="true" />
+      <created>1715562324980</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1715562324980</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -196,6 +208,11 @@
           <url>file://$PROJECT_DIR$/corespringsecurity/src/main/java/io/security/corespringsecurity/security/provider/CustomAuthenticationProvider.java</url>
           <line>28</line>
           <option name="timeStamp" value="23" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/corespringsecurity/src/main/java/io/security/corespringsecurity/controller/login/LoginController.java</url>
+          <line>40</line>
+          <option name="timeStamp" value="25" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
