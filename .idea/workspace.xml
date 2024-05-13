@@ -4,7 +4,26 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="17d9c83f-f494-4cf5-8b34-cfca582ac3e6" name="변경" comment="강의 코드 사용자 DB 등록 및 PasswordEncoder" />
+    <list default="true" id="17d9c83f-f494-4cf5-8b34-cfca582ac3e6" name="변경" comment="인증성공 핸들러까지 완료">
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/springSecStudy.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/corespringsecurity/src/main/java/io/security/corespringsecurity/domain/Account.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/corespringsecurity/src/main/java/io/security/corespringsecurity/domain/AccountDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/corespringsecurity/src/main/java/io/security/corespringsecurity/repository/UserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/corespringsecurity/mvnw" beforeDir="false" afterPath="$PROJECT_DIR$/corespringsecurity/mvnw" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/corespringsecurity/src/main/java/io/security/corespringsecurity/controller/admin/ConfigController.java" beforeDir="false" afterPath="$PROJECT_DIR$/corespringsecurity/src/main/java/io/security/corespringsecurity/controller/admin/ConfigController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/corespringsecurity/src/main/java/io/security/corespringsecurity/controller/user/MessageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/corespringsecurity/src/main/java/io/security/corespringsecurity/controller/user/MessageController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/corespringsecurity/src/main/java/io/security/corespringsecurity/controller/user/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/corespringsecurity/src/main/java/io/security/corespringsecurity/controller/user/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/corespringsecurity/src/main/java/io/security/corespringsecurity/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/corespringsecurity/src/main/java/io/security/corespringsecurity/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/corespringsecurity/src/main/java/io/security/corespringsecurity/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/corespringsecurity/src/main/java/io/security/corespringsecurity/service/impl/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/corespringsecurity/src/main/resources/templates/user/mypage.html" beforeDir="false" afterPath="$PROJECT_DIR$/corespringsecurity/src/main/resources/templates/user/mypage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/corespringsecurity/target/classes/io/security/corespringsecurity/CoreSpringSecurityApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/corespringsecurity/target/classes/io/security/corespringsecurity/CoreSpringSecurityApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/corespringsecurity/target/classes/io/security/corespringsecurity/controller/HomeController.class" beforeDir="false" afterPath="$PROJECT_DIR$/corespringsecurity/target/classes/io/security/corespringsecurity/controller/HomeController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/corespringsecurity/target/classes/io/security/corespringsecurity/security/configs/SecurityConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/corespringsecurity/target/classes/io/security/corespringsecurity/security/configs/SecurityConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/corespringsecurity/target/classes/templates/layout/top.html" beforeDir="false" afterPath="$PROJECT_DIR$/corespringsecurity/target/classes/templates/layout/top.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -91,7 +110,15 @@
       <option name="project" value="LOCAL" />
       <updated>1714639652746</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="인증성공 핸들러까지 완료">
+      <option name="closed" value="true" />
+      <created>1715559879294</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1715559879294</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -133,7 +160,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="mariaDB연결" />
     <MESSAGE value="강의 코드 사용자 DB 등록 및 PasswordEncoder" />
-    <option name="LAST_COMMIT_MESSAGE" value="강의 코드 사용자 DB 등록 및 PasswordEncoder" />
+    <MESSAGE value="인증성공 핸들러까지 완료" />
+    <option name="LAST_COMMIT_MESSAGE" value="인증성공 핸들러까지 완료" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
