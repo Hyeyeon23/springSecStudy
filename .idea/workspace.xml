@@ -4,13 +4,26 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="17d9c83f-f494-4cf5-8b34-cfca582ac3e6" name="변경" comment="인증성공 핸들러까지 완료">
+    <list default="true" id="17d9c83f-f494-4cf5-8b34-cfca582ac3e6" name="변경" comment="- AccessDeniedHandler 까지&#10;- SecrurityContextHolder &gt; Principle에 Usernane -&gt; AccountContext 객체 주입">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/corespringsecurity/src/main/java/io/security/corespringsecurity/controller/login/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/corespringsecurity/src/main/java/io/security/corespringsecurity/controller/login/LoginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/corespringsecurity/src/main/java/io/security/corespringsecurity/controller/user/MessageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/corespringsecurity/src/main/java/io/security/corespringsecurity/controller/user/MessageController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/corespringsecurity/src/main/java/io/security/corespringsecurity/controller/user/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/corespringsecurity/src/main/java/io/security/corespringsecurity/controller/user/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/corespringsecurity/src/main/java/io/security/corespringsecurity/domain/Account.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/corespringsecurity/src/main/java/io/security/corespringsecurity/domain/AccountDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/corespringsecurity/src/main/java/io/security/corespringsecurity/domain/MemberAccount.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/corespringsecurity/src/main/java/io/security/corespringsecurity/repository/MemberAccountRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/corespringsecurity/src/main/java/io/security/corespringsecurity/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/corespringsecurity/src/main/java/io/security/corespringsecurity/repository/UserRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/corespringsecurity/src/main/java/io/security/corespringsecurity/security/configs/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/corespringsecurity/src/main/java/io/security/corespringsecurity/security/configs/SecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/corespringsecurity/src/main/java/io/security/corespringsecurity/security/provider/CustomAuthenticationProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/corespringsecurity/src/main/java/io/security/corespringsecurity/security/provider/CustomAuthenticationProvider.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/corespringsecurity/target/classes/io/security/corespringsecurity/controller/login/LoginController.class" beforeDir="false" afterPath="$PROJECT_DIR$/corespringsecurity/target/classes/io/security/corespringsecurity/controller/login/LoginController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/corespringsecurity/src/main/java/io/security/corespringsecurity/security/service/AccountContext.java" beforeDir="false" afterPath="$PROJECT_DIR$/corespringsecurity/src/main/java/io/security/corespringsecurity/security/service/AccountContext.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/corespringsecurity/src/main/java/io/security/corespringsecurity/security/service/CustomUserDetailService.java" beforeDir="false" afterPath="$PROJECT_DIR$/corespringsecurity/src/main/java/io/security/corespringsecurity/security/service/CustomUserDetailService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/corespringsecurity/src/main/java/io/security/corespringsecurity/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/corespringsecurity/src/main/java/io/security/corespringsecurity/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/corespringsecurity/src/main/java/io/security/corespringsecurity/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/corespringsecurity/src/main/java/io/security/corespringsecurity/service/impl/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/corespringsecurity/src/main/resources/templates/user/login/login.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/corespringsecurity/target/classes/io/security/corespringsecurity/controller/user/MessageController.class" beforeDir="false" afterPath="$PROJECT_DIR$/corespringsecurity/target/classes/io/security/corespringsecurity/controller/user/MessageController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/corespringsecurity/target/classes/io/security/corespringsecurity/domain/MemberAccount.class" beforeDir="false" afterPath="$PROJECT_DIR$/corespringsecurity/target/classes/io/security/corespringsecurity/domain/MemberAccount.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/corespringsecurity/target/classes/io/security/corespringsecurity/security/configs/SecurityConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/corespringsecurity/target/classes/io/security/corespringsecurity/security/configs/SecurityConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/corespringsecurity/target/classes/io/security/corespringsecurity/security/service/AccountContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/corespringsecurity/target/classes/io/security/corespringsecurity/security/service/AccountContext.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,9 +33,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="HTML File" />
         <option value="Interface" />
         <option value="Class" />
-        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -54,6 +67,11 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\yeonings\project_uij\security\springSecStudy\corespringsecurity\src\main\resources\templates" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="CoreSpringSecurityApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="io.security.corespringsecurity.CoreSpringSecurityApplication" />
@@ -131,7 +149,15 @@
       <option name="project" value="LOCAL" />
       <updated>1715562324980</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="- AccessDeniedHandler 까지&#10;- SecrurityContextHolder &gt; Principle에 Usernane -&gt; AccountContext 객체 주입">
+      <option name="closed" value="true" />
+      <created>1715565086194</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1715565086194</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -179,7 +205,8 @@
     <MESSAGE value="mariaDB연결" />
     <MESSAGE value="강의 코드 사용자 DB 등록 및 PasswordEncoder" />
     <MESSAGE value="인증성공 핸들러까지 완료" />
-    <option name="LAST_COMMIT_MESSAGE" value="인증성공 핸들러까지 완료" />
+    <MESSAGE value="- AccessDeniedHandler 까지&#10;- SecrurityContextHolder &gt; Principle에 Usernane -&gt; AccountContext 객체 주입" />
+    <option name="LAST_COMMIT_MESSAGE" value="- AccessDeniedHandler 까지&#10;- SecrurityContextHolder &gt; Principle에 Usernane -&gt; AccountContext 객체 주입" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -213,6 +240,11 @@
           <url>file://$PROJECT_DIR$/corespringsecurity/src/main/java/io/security/corespringsecurity/controller/login/LoginController.java</url>
           <line>40</line>
           <option name="timeStamp" value="25" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/corespringsecurity/src/main/java/io/security/corespringsecurity/security/provider/AjaxAuthenticationProvider.java</url>
+          <line>25</line>
+          <option name="timeStamp" value="26" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

@@ -1,6 +1,5 @@
 package io.security.corespringsecurity.controller.login;
 
-import io.security.corespringsecurity.domain.Account;
 import io.security.corespringsecurity.security.service.AccountContext;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.context.SecurityContextHolder;
@@ -15,6 +14,7 @@ import javax.servlet.http.HttpServletResponse;
 
 @Controller
 public class LoginController {
+
 
     @GetMapping("/login")
     public String login(@RequestParam(value = "error", required = false) String error,
@@ -43,10 +43,6 @@ public class LoginController {
         model.addAttribute("username", account.getUsername());
         model.addAttribute("exception", exception);
         return "user/login/denied";
-
-
-
-
 
     }
 
